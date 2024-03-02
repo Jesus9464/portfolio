@@ -25,7 +25,7 @@
 					// Things that start with a letter (or digit or underscore), or `@` followed by a letter.
 					["^react$", "^next$", "^@chakra-ui", "^react", "^@?\\w", "^[^.]"],
 					// Absolute imports - ts-alias
-					["(^@(components))(/.*|$)([^\\u0000$])"],
+					["(^@(components|styles))(/.*|$)([^\\u0000$])"],
 					// Relative imports.
 					["^\\."],
 					// for types imports

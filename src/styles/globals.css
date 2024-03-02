@@ -1,0 +1,16 @@
+  * {
+   font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  }
+
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: url(https://img.freepik.com/foto-gratis/viejo-fondo-negro-textura-grunge-papel-tapiz-oscuro-pizarra-pizarra-pared-habitacion_1258-28313.jpg?w=2000&t=st=1709344333~exp=1709344933~hmac=c456610b65f1ae085f7c8a18ad949e82726bed4490fa542f632f4571c1200e66) !important;
+  background-size: cover;
+}
