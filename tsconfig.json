@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"lib": ["dom", "dom.iterable", "esnext"],
+		"lib": ["dom", "dom.iterable", "esnext", "es2018", "esnext.asynciterable"],
 		"allowJs": true,
 		"skipLibCheck": true,
 		"strict": true,
@@ -13,16 +13,22 @@
 		"isolatedModules": true,
 		"jsx": "preserve",
 		"incremental": true,
+		"baseUrl": ".",
+		"paths": {
+			"@styles/*": ["src/styles/*"],
+			"@components/*": ["src/components/*"],
+			"@assets/*": ["src/assets/*"],
+			"@common/*": ["src/common/*"]
+		},
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"strictPropertyInitialization": false,
+		"target": "es2018",
 		"plugins": [
 			{
 				"name": "next"
 			}
-		],
-		"baseUrl": ".",
-		"paths": {
-			"@styles/*": ["src/styles/*"],
-			"@components/*": ["src/components/*"]
-		}
+		]
 	},
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
 	"exclude": ["node_modules"]

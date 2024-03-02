@@ -1,11 +1,10 @@
+import { ChakraProvider } from '@common/chakra/ChakraProvider';
+
 import 'normalize.css';
-import { ChakraProvider } from '@chakra-ui/react';
-
-import { BackGround } from '@components/index';
-
 import '@styles/globals.css';
 
 import type { Metadata } from 'next';
+import { fonts } from '@common/chakra';
 
 export const metadata: Metadata = {
 	title: 'Jesus Galvis',
@@ -19,15 +18,9 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
-			<head>
-				<link rel="preconnect" href="https://fonts.googleapis.com" />
-				<link rel="preconnect" href="https://fonts.gstatic.com" />
-				<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet" />
-			</head>
+		<html lang="en" className={fonts.roboto.variable}>
 			<body>
 				<ChakraProvider>{children}</ChakraProvider>
-				<BackGround />
 			</body>
 		</html>
 	);

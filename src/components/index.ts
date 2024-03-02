@@ -1,1 +1,1 @@
-export { default as BackGround } from './BackGround';
+export { default as BackGroundAnimated } from './BackGroundAnimated';
