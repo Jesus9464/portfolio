@@ -4,10 +4,9 @@ import { Box } from '@chakra-ui/react';
 
 import '@styles/background.css';
 
-const BackGroundAnimated = ({ children }: { children: React.ReactNode }) => {
+const BackGroundAnimated = () => {
 	return (
-		<Box className="header-firefly">
-			{children}
+		<>
 			<Box className="firefly"></Box>
 			<Box className="firefly"></Box>
 			<Box className="firefly"></Box>
@@ -23,7 +22,7 @@ const BackGroundAnimated = ({ children }: { children: React.ReactNode }) => {
 			<Box className="firefly"></Box>
 			<Box className="firefly"></Box>
 			<Box className="firefly"></Box>
-		</Box>
+		</>
 	);
 };
 

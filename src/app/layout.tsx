@@ -5,6 +5,8 @@ import '@styles/globals.css';
 
 import type { Metadata } from 'next';
 import { fonts } from '@common/chakra';
+import { BackGroundAnimated, DesktopMenu } from '@components/index';
+import { Flex } from '@chakra-ui/react';
 
 export const metadata: Metadata = {
 	title: 'Jesus Galvis',
@@ -20,7 +22,13 @@ export default function RootLayout({
 	return (
 		<html lang="en" className={fonts.roboto.variable}>
 			<body>
-				<ChakraProvider>{children}</ChakraProvider>
+				<ChakraProvider>
+					<Flex>
+						<DesktopMenu />
+						{children}
+					</Flex>
+					<BackGroundAnimated />
+				</ChakraProvider>
 			</body>
 		</html>
 	);
