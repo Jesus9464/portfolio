@@ -1,9 +1,22 @@
-import { Box, Text, Center } from '@chakra-ui/react';
+'use client';
+import Typewriter from 'typewriter-effect';
+import { Box } from '@chakra-ui/react';
 
-import { BackGroundAnimated, TextAnimated } from '@components/index';
-
-import { JesusIcon } from '@assets/index';
+import '@styles/typing.css';
 
 export default function Home() {
-	return <TextAnimated fullText="Hi, I'm Jesus Galvis." color="white" fontSize={120} fontWeight="bold" />;
+	return (
+		<Box display="flex" justifyContent="center" alignItems="center" width="100%" flexDirection="column">
+			<Typewriter
+				options={{
+					strings: ["Hi, I'm Jesus Galvis", 'Software Development.'],
+					autoStart: true,
+					loop: true,
+					cursorClassName: 'cursor-typing',
+					wrapperClassName: 'wrapper-typing',
+					skipAddStyles: true,
+				}}
+			/>
+		</Box>
+	);
 }

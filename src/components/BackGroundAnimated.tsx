@@ -6,7 +6,7 @@ import '@styles/background.css';
 
 const BackGroundAnimated = () => {
 	return (
-		<>
+		<Box>
 			<Box className="firefly"></Box>
 			<Box className="firefly"></Box>
 			<Box className="firefly"></Box>
@@ -22,7 +22,20 @@ const BackGroundAnimated = () => {
 			<Box className="firefly"></Box>
 			<Box className="firefly"></Box>
 			<Box className="firefly"></Box>
-		</>
+			<Box className="firefly"></Box>
+			<Box className="firefly"></Box>
+			<Box className="firefly"></Box>
+			<Box className="firefly"></Box>
+			<Box className="firefly"></Box>
+			<Box className="firefly"></Box>
+			<Box className="firefly"></Box>
+			<Box className="firefly"></Box>
+			<Box className="firefly"></Box>
+			<Box className="firefly"></Box>
+			<Box className="firefly"></Box>
+			<Box className="firefly"></Box>
+			<Box className="firefly"></Box>
+		</Box>
 	);
 };
 
