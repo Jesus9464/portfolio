@@ -1,4 +1,5 @@
 import { ChakraProvider } from '@common/chakra/ChakraProvider';
+import Head from 'next/head';
 
 import 'normalize.css';
 import '@styles/globals.css';
@@ -21,6 +22,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" className={fonts.roboto.variable}>
+			<Head>
+				<meta charSet="UTF-8" />
+				<link rel="icon" href="/favicon.ico" />
+			</Head>
 			<body>
 				<ChakraProvider>
 					<Flex>

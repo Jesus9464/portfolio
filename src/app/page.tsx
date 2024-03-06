@@ -1,12 +1,12 @@
 'use client';
 import Typewriter from 'typewriter-effect';
-import { Box } from '@chakra-ui/react';
+import { Center } from '@chakra-ui/react';
 
 import '@styles/typing.css';
 
 export default function Home() {
 	return (
-		<Box display="flex" justifyContent="center" alignItems="center" width="100%" flexDirection="column">
+		<Center height="100vh" width="80%">
 			<Typewriter
 				options={{
 					strings: ["Hi, I'm Jesus Galvis", 'Software Development.'],
@@ -17,6 +17,6 @@ export default function Home() {
 					skipAddStyles: true,
 				}}
 			/>
-		</Box>
+		</Center>
 	);
 }
